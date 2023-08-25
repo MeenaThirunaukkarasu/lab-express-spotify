@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Artists </title>
+  <link rel="stylesheet" href="/styles/style.css">
+<body>
+<div class="">
+{{#each artists}}
+<ul class="">
+<li class="">
+    <img src='{{images.[1].url}}' alt='artist image'/>
+    <h2 class="artist-name"> {{this.name}} </h2>
+    <a href="/albums/{{this.id}}" class=""> View Albums </a>
+</li>
+</ul>
+{{/each}}
+</div>
+</body>
+</html>

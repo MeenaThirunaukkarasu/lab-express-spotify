@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Tracks </title>
+  <link rel="stylesheet" href="/styles/style.css">
+<body>
+{{#each tracks}}
+<div class="">
+  <h1> {{data.body.tracks}} </h1>
+    <a href="/albums/{{id}}" class=""> {{name}} </a>
+  <audio controls>
+      <source src="{{preview_url}}" type="audio/mpeg">
+  </audio>
+</div>
+{{/each}}
+</body>
+</html>
